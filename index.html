@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ProdductPage</title>
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <!--slick-->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!--fontawesome 4.7.0-->
+        <script src="https://use.fontawesome.com/5fd3fbeaa3.js"></script>
+    </head>
+    <body>
+        <!--Notification-->
+        <div class="notify py-3">
+            <div class="container position-relative">
+                <div class=""> 
+                    <p class="title-notify text-light text-center text-uppercase">grab it before it's gone... sale's now up to 70% off</p>
+                </div>
+                <div class="close position-absolute top-0 end-0">
+                    <button type="button" class="btn-close btn-close-white me-5"  aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <!--Start header-->
+        <header class="border-bottom border-secondary">
+            <div class="container">
+                <div class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt=""><span class="name-brand">eveland</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active link-dark" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#">Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#">Element</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-dark" href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End header-->
+        <section class="p-5" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <div class="nav flex-column gap-3 nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                      <a class="nav-link bg-secondary active " id="image1-tab" data-bs-toggle="pill" href="#imgage1" role="tab" aria-controls="imgage1" aria-selected="true"><img src="img/red-hat.jpg" alt=""></a>
+                                      <a class="nav-link bg-secondary " id="image2-tab" data-bs-toggle="pill"  href="#imgage2" role="tab" aria-controls="imgage2" aria-selected="false"><img src="img/red-hat.jpg"  alt="" ></a>
+                                      <a class="nav-link bg-secondary" id="image3-tab" data-bs-toggle="pill"  href="#imgage3" role="tab" aria-controls="imgage3" aria-selected="false"><img src="img/red-hat.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                      <div class="tab-pane fade show active" id="image1" role="tabpanel" aria-labelledby="imgage1-tab"><img src="img/red-hat.jpg"  alt=""></div>
+                                      <div class="tab-pane fade" id="image2" role="tabpanel" aria-labelledby="imgage2-tab"><img src="img/red-hat.jpg"  alt=""></div>
+                                      <div class="tab-pane fade" id="image3" role="tabpanel" aria-labelledby="imgage3-tab"><img src="img/red-hat.jpg"  alt=""></div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="rating">
+
+                                </div>
+                                <h3>Velcro Baseball Cap</h3>
+                                <div class="price">
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="infor-product border-top border-secondary">
+                                    <p class="small text-secondary pt-4">Donec interdum, metus et hendrerit dolor diam sagittis ligula, eget egestas libero turpis vel mi. Etiam ut purus mattis mauris sodales aliquam. sit amet, consectetuer....</p>
+                                </div>
+                                <div class="d-flex gap-3 size mb-3">
+                                    <h5 class="border-bottom border-dark border-3 mb-3">SIZE:</h5>
+                                    <form class="d-flex flex-wrap gap-2">
+                                        <input type="radio" class="btn-check" name="options-outlined" id="size-M" checked>
+                                        <label class="btn btn-outline-secondary" for="size-M">M</label>
+                                        <input type="radio" class="btn-check" name="options-outlined" id="size-L">
+                                        <label class="btn btn-outline-secondary" for="size-L">L</label>
+                                        <input type="radio" class="btn-check" name="options-outlined" id="size-XL">
+                                        <label class="btn btn-outline-secondary" for="size-XL">XL</label>
+                                        <input type="radio" class="btn-check" name="options-outlined" id="size-XXL">
+                                        <label class="btn btn-outline-secondary" for="size-XXL">XXL</label>
+                                    </form>
+                                </div>
+                                <div class="d-flex gap-3 color">
+                                    <h5 class="border-bottom border-dark border-3 mb-3">COLOR:</h5>
+                                    <form>
+                                        <div class="form-check form-check-inline mx-0">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Copperfield" value="option1" checked>
+                                            <label class="form-check-label" for="Copperfield"></label>
+                                        </div>
+                                        <div class="form-check form-check-inline mx-0">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Lavender" value="option2">
+                                            <label class="form-check-label" for="Lavender"></label>
+                                        </div>
+                                        <div class="form-check form-check-inline mx-0">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Viking" value="option3">
+                                            <label class="form-check-label" for="Viking"></label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-flex flex-wrap flex-lg-nowrap p-4  mb-3 align-items-center border border-secondary border-2">
+                            <div class="flex-shrink">
+                                <img src="img/Shape1.png" alt="">
+                            </div>
+                            <div class="flex-grow ms-4">
+                                <h5>free shipping</h5>
+                                <p>only order from $230</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-lg-nowrap p-4  mb-3 align-items-center border border-secondary border-2">
+                            <div class="flex-shrink">
+                                <img src="img/Forma1.png" alt="">
+                            </div>
+                            <div class="flex-grow ms-4">
+                                <h5>30 day return</h5>
+                                <p>only order from $230</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-lg-nowrap p-4 align-items-center border border-secondary border-2">
+                            <div class="flex-shrink">
+                                <img src="img/Forma2.png" alt="">
+                            </div>
+                            <div class="flex-grow ms-4">
+                                <h5>safeted payment</h5>
+                                <p>only order from $230</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 p-5 border-top">
+            <div class="container">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="rounded-pill nav-link link-secondary active" id="description-tab" data-bs-toggle="pill" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="rounded-pill nav-link link-secondary" id="additional-information-tab" data-bs-toggle="pill" data-bs-target="#additional-information" type="button" role="tab" aria-controls="additional-information" aria-selected="false">Additional information</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="rounded-pill nav-link link-secondary" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/model1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 m-auto p-5">
+                                <h3>Adjustable Hook & Loop fastener</h3>
+                                <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                                <a class="link-dark pb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="additional-information" role="tabpanel" aria-labelledby="additional-information-tab">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/model1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 m-auto p-5">
+                                <h3>Adjustable Hook & Loop fastener</h3>
+                                <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                                <a class="link-dark pb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/model1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 m-auto p-5">
+                                <h3>Adjustable Hook & Loop fastener</h3>
+                                <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                                <a class="link-dark pb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <img src="img/banner.jpg" alt="">
+        </section>
+        <section class="about-product mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 my-auto p-5 ">
+                        <h3>100% Polyester</h3>
+                        <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                        <a class="link-dark pb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                    </div>
+                    <div class="col-lg-6 p-5">
+                        <img src="img/model2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border-top p-5 mt-5">
+            <div class="container">
+                <div class="related-product">
+                    <div class="product-item">
+                        <img src="img/shoe1.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/coat1.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/beanie.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/brown-hat.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/shoe1.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/coat1.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/beanie.jpg" alt="">
+                    </div>
+                    <div class="product-item">
+                        <img src="img/brown-hat.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Start footer-->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-lg-3 mb-4">
+                            <h5 class="title-list text-light">help & information</h5>
+                            <div class="divider my-3"></div>
+                            <div class="nav flex-column gap-2">
+                                <a class="link-secondary text-capitalize" href="#">help</a>
+                                <a class="link-secondary text-capitalize" href="#">track order</a>
+                                <a class="link-secondary text-capitalize" href="#">delivery & returns</a>
+                                <a class="link-secondary text-capitalize" href="#">10% student discount</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <h5 class="title-list text-light">about us</h5>
+                            <div class="divider my-3"></div>
+                            <div class="nav flex-column gap-2">
+                                <a class="link-secondary text-capitalize" href="#">careers at eveland</a>
+                                <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
+                                <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
+                                <a class="link-secondary text-capitalize" href="#">investors site</a>
+                                <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
+                                <a class="link-secondary text-capitalize" href="#">contact us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <h5 class="title-list text-light">categories</h5>
+                            <div class="divider my-3"></div>
+                            <div class="nav flex-column gap-2">
+                                <a class="link-secondary text-capitalize" href="#">all clothing</a>
+                                <a class="link-secondary text-capitalize" href="#">jackets</a>
+                                <a class="link-secondary text-capitalize" href="#">jumpsuits</a>
+                                <a class="link-secondary text-capitalize" href="#">knitwear</a>
+                                <a class="link-secondary text-capitalize" href="#">party dresses</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <h5 class="title-list text-light">the good stuff in your inbox</h5>
+                            <div class="divider opacity-0 my-3"></div>
+                            <div class="">
+                                <p class="text-muted">New & update from EvelandStore.</p>
+                                <p class="text-muted">No spam, we promise.</p>
+                            </div>
+                            <div class="Registion text-end">
+                                <a class="text-light text-decoration-none" href="#">Sign up<i class="fa fa-angle-right mx-2" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="border-top border-2 border-primary"></div>
+                            <div class="social py-4">
+                                <div class="d-flex gap-2 list-unstyled">
+                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                        <i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                        <i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top p-3">
+                <div class="container">
+                    <div class="d-flex flex-wrap gap-2  justify-content-between">
+                        <div class="author">
+                            <p class="text-muted mb-0">Website by <span class="text-light">Famithemes.</span> Copyright Evelandshop</p>
+                        </div>
+                        <div class="payment">
+                            <img src="img/paypal-curved-128px.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End footer-->
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--Slick-->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--My script-->
+        <script src="script.js"></script>
+    </body>
+</html>

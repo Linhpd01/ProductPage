@@ -1,0 +1,114 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.text-justify {
+    text-align: justify;
+  }
+.notify{
+    background-color: #1e1e1e;
+}
+.notify .title-notify{
+    margin-bottom:0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+header .name-brand{
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+/*section2*/
+#image1-tab{
+    width: 100px;
+}
+#image2-tab{
+    width: 100px;
+}
+#image3-tab{
+    width: 100px;
+}
+#image1-tab img{
+    width: 100%;
+}
+#image2-tab img{
+    width: 100%;
+}
+#image3-tab img{
+    width: 100%;
+}
+#image1 img{
+    width: 100%;
+}
+#image2 img{
+    width: 100%;
+}
+#image3 img{
+    width: 100%;
+}
+/*color*/
+#Copperfield{
+    background-image: url('img/Copperfield.png');
+}
+#Lavender{
+    background-image: url('img/Lavender.png');
+}
+#Viking{
+    background-image: url('img/Viking.png');
+}
+/*tab-pane*/
+.tab-pane img{
+    width: 100%;
+}
+/*about-product*/
+.about-product img{
+    width: 100%;
+}
+/*banner*/
+.banner img{
+    width: 100%;
+    height: auto;
+}
+/*slick*/ 
+.slick-slide img{
+    max-width: 100%;
+    padding: 0 15px;
+}
+.slick-dots button{
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border: none;
+    outline: none;
+    background-color: #888;
+    border-radius: 50%;
+}
+.slick-dots .slick-active button{
+    background-color: #000 !important;
+}
+.slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+.slick-dots {
+    position: absolute;
+    left: 50%;
+}
+/*footer*/
+footer{
+    background-color: #161616;
+}
+.divider{
+    margin: 20px 0;
+    height: 3px;
+    width: 15%;
+    background-color: #fff;
+}
+footer .title-list{
+    font-size: 14px;
+    text-transform: uppercase;
+}
