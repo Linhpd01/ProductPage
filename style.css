@@ -47,10 +47,6 @@ header .name-brand{
 #image3 img{
     width: 100%;
 }
-#pills-tabContent-1{
-    max-width: 500px;
-    min-width: 250px;
-}
 /*color*/
 #Copperfield{
     background-image: url('img/Copperfield.png');
