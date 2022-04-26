@@ -17,8 +17,6 @@ a{
     word-spacing: 5px;
 }
 header .name-brand{
-    margin-left: 15px;
-    text-transform: uppercase;
     letter-spacing: 6px;
 }
 /*section2*/
@@ -48,6 +46,9 @@ header .name-brand{
 }
 #image3 img{
     width: 100%;
+}
+#pills-tabContent-1{
+    width: 500px;
 }
 /*color*/
 #Copperfield{
