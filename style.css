@@ -48,7 +48,8 @@ header .name-brand{
     width: 100%;
 }
 #pills-tabContent-1{
-    width: 500px;
+    max-width: 500px;
+    min-width: 250px;
 }
 /*color*/
 #Copperfield{
