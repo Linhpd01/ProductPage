@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ProdductPage</title>
+        <title>ProductPage</title>
         <!--Bootstrap CSS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
         <!--font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <!--My CSS-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
         <!--slick-->
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <!--fontawesome 4.7.0-->
@@ -18,46 +20,46 @@
     </head>
     <body>
         <!--Notification-->
-        <div class="notify py-3 d-none d-lg-block">
+        <div class="notify d-none d-lg-block">
             <div class="container position-relative">
                 <div class=""> 
                     <p class="title-notify text-light text-center text-uppercase">grab it before it's gone... sale's now up to 70% off</p>
                 </div>
-                <div class="close position-absolute top-0 end-0">
-                    <button type="button" class="btn-close btn-close-white me-5"  aria-label="Close"></button>
+                <div class="close position-absolute">
+                    <button type="button" class="btn-close btn-close-white"  aria-label="Close"></button>
                 </div>
             </div>
         </div>
         <!--Start header-->
-        <header class="border-bottom border-secondary">
+        <header>
             <div class="container">
-                <div class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
+                <div class="navbar navbar-expand-lg navbar-light p-0 mx-4 mx-xxl-0">
                         <a class="navbar-brand" href="#">
-                            <img src="img/logo.png" alt=""><span class="name-brand text-uppercase ms-2">eveland</span>
+                            <img src="img/logo.png" alt=""><span class="name-brand text-uppercase">eveland</span>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active link-dark" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">Shop</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">Element</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active link-dark" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-dark" href="#">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-dark" href="#">Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-dark" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-dark" href="#">Element</a>
+                                    </li>
+                                </ul>
+                                <div class="menu-search">
+                                    <a class="link-dark" href="#">
                                         <svg 
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -66,9 +68,9 @@
                                             d="M24.860,25.168 L17.577,17.582 C19.434,15.716 20.585,13.144 20.585,10.308 C20.585,4.623 15.968,-0.001 10.292,-0.001 C4.616,-0.001 -0.001,4.623 -0.001,10.308 C-0.001,15.992 4.616,20.616 10.292,20.616 C12.783,20.616 15.070,19.724 16.852,18.244 L24.153,25.848 C24.249,25.949 24.377,25.999 24.506,25.999 C24.629,25.999 24.751,25.953 24.846,25.862 C25.041,25.674 25.047,25.363 24.860,25.168 ZM10.292,19.634 C5.157,19.634 0.979,15.450 0.979,10.308 C0.979,5.165 5.157,0.981 10.292,0.981 C15.427,0.981 19.605,5.165 19.605,10.308 C19.605,15.450 15.427,19.634 10.292,19.634 Z"/>
                                         </svg>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">
+                                </div>
+                                <div class="menu-user">
+                                    <a class="link-dark" href="#">
                                         <svg 
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -77,9 +79,9 @@
                                             d="M27.000,13.501 C27.000,6.061 20.938,-0.001 13.498,-0.001 C6.059,-0.001 -0.000,6.061 -0.000,13.501 C-0.000,17.598 1.859,21.285 4.751,23.762 C4.786,23.798 4.821,23.832 4.888,23.864 C7.229,25.829 10.227,26.999 13.533,26.999 C16.770,26.999 19.768,25.829 22.108,23.935 C22.245,23.899 22.350,23.798 22.418,23.692 C25.211,21.180 27.000,17.563 27.000,13.501 ZM1.240,13.501 C1.240,6.749 6.751,1.239 13.501,1.239 C20.252,1.239 25.763,6.749 25.763,13.501 C25.763,16.807 24.455,19.801 22.319,22.009 C21.974,20.389 20.941,17.634 17.771,15.844 C18.495,14.948 18.907,13.778 18.907,12.537 C18.907,9.575 16.496,7.165 13.533,7.165 C10.571,7.165 8.160,9.575 8.160,12.537 C8.160,13.778 8.607,14.913 9.295,15.844 C6.097,17.634 5.064,20.389 4.755,22.009 C2.583,19.837 1.240,16.807 1.240,13.501 ZM9.369,12.569 C9.369,10.296 11.228,8.437 13.501,8.437 C15.775,8.437 17.634,10.296 17.634,12.569 C17.634,14.843 15.775,16.702 13.501,16.702 C11.228,16.702 9.369,14.843 9.369,12.569 ZM5.855,23.074 C5.925,22.075 6.473,18.699 10.195,16.804 C11.126,17.529 12.261,17.940 13.501,17.940 C14.742,17.940 15.912,17.493 16.843,16.769 C20.530,18.664 21.113,21.970 21.218,23.038 C19.117,24.726 16.432,25.759 13.540,25.759 C10.609,25.762 7.956,24.764 5.855,23.074 Z"/>
                                         </svg>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link link-dark" href="#">
+                                </div>
+                                <div class="menu-shopping-cart">
+                                    <a class="link-dark" href="#">
                                         <svg 
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -88,55 +90,62 @@
                                             d="M13.792,6.371 L27.006,6.371 L24.139,19.536 L10.457,19.536 L3.853,1.145 L-0.006,1.145 L-0.006,-0.008 L4.668,-0.008 L11.278,18.444 L23.208,18.444 L25.600,7.462 L13.792,7.462 L13.792,6.371 ZM13.147,21.029 C14.784,21.029 16.129,22.352 16.129,24.017 C16.129,25.682 14.784,27.006 13.147,27.006 C11.510,27.006 10.165,25.682 10.165,24.017 C10.165,22.352 11.510,21.029 13.147,21.029 ZM13.147,25.859 C14.200,25.859 15.016,25.053 15.016,24.017 C15.016,23.036 14.200,22.176 13.147,22.176 C12.155,22.176 11.278,22.982 11.278,24.017 C11.278,24.999 12.094,25.859 13.147,25.859 ZM21.626,21.029 C23.263,21.029 24.608,22.352 24.608,24.017 C24.608,25.682 23.263,27.006 21.626,27.006 C19.988,27.006 18.643,25.682 18.643,24.017 C18.643,22.352 19.988,21.029 21.626,21.029 ZM21.626,25.859 C22.679,25.859 23.494,25.053 23.494,24.017 C23.494,23.036 22.679,22.176 21.626,22.176 C20.633,22.176 19.812,22.982 19.757,24.017 C19.757,24.999 20.573,25.859 21.626,25.859 Z"/>
                                         </svg>
                                     </a>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </header>
         <!--End header-->
-        <section class="mt-5" >
+        <section class="order-product">
+            <div class="page-product mx-4 mx-xxl-0">
+                <div class="container">
+                    <p>
+                        <a class="link-dark" href="#">Home</a>
+                        <i class="fa fa-angle-right fa-lg lh-1 mx-2" aria-hidden="true"></i>
+                        <a class="link-dark" href="#">The shop</a>
+                    </p>
+                </div>
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="d-sm-flex gap-3 align-items-start justify-content-start">
-                                    <div class="nav flex-sm-column flex-nowrap gap-3 nav-pills justify-content-center mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="row m-0">
+                    <div class="col-xxl-9 ps-xxl-0">
+                        <div class="d-lg-flex">
+                            <div class="image-product">
+                                <div class="d-flex flex-md-row flex-column-reverse align-items-start gap-4 gap-md-0 justify-content-lg-start justify-content-center">
+                                    <div class="nav mx-auto mx-md-0  flex-md-column flex-nowrap mx-auto nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                       <a class="bg-secondary active " id="image1-tab" data-bs-toggle="pill" href="#image1" role="tab" aria-controls="image1" aria-selected="true"><img src="img/red-hat.jpg" alt=""></a>
                                       <a class="bg-secondary " id="image2-tab" data-bs-toggle="pill"  href="#image2" role="tab" aria-controls="image2" aria-selected="false"><img src="img/brown-hat.jpg"  alt="" ></a>
                                       <a class="bg-secondary" id="image3-tab" data-bs-toggle="pill"  href="#image3"  role="tab" aria-controls="image3" aria-selected="false"><img src="img/beanie.jpg"  alt=""></a>
                                     </div>
-                                    <div class="tab-content" id="pills-tabContent-1">
+                                    <div class="tab-content mx-auto mx-md-0 " id="pills-tabContent-1">
                                       <div class="tab-pane fade show active" id="image1" role="tabpanel" aria-labelledby="image1-tab"><img src="img/red-hat.jpg"  alt=""></div>
                                       <div class="tab-pane fade" id="image2" role="tabpanel" aria-labelledby="image2-tab"><img src="img/brown-hat.jpg"  alt=""></div>
                                       <div class="tab-pane fade" id="image3" role="tabpanel" aria-labelledby="image3-tab"><img src="img/beanie.jpg"  alt=""></div>
                                     </div>
                                   </div>
                             </div>
-                            <div class="col-lg-4 my-3 my-lg-0">
-                                <div class="rating d-flex mb-2">
+                            <div class="infor-order mt-4 mt-lg-0 px-4 pe-lg-0">
+                                <div class="rating d-flex">
                                     <img src="img/star.png" alt="">
                                     <img src="img/star.png" alt="">
                                     <img src="img/star.png" alt="">
                                     <img src="img/star.png" alt="">
-                                    <span class="ms-2 small text-secondary">(1 customer review)</span>
+                                    <span class="text-secondary">(1 customer review)</span>
                                 </div>
-                                <h3>Velcro Baseball Cap</h3>
-                                <div class="price">
-                                    <p>$300.00</p>
+                                <h3 class="name-product">Velcro Baseball Cap</h3>
+                                <p class="price">$300.00</p>
+                                <p class="about-product">Donec interdum, metus et hendrerit dolor diam sagittis ligula, eget egestas libero turpis vel mi. Etiam ut purus mattis mauris sodales aliquam. sit amet, consectetuer....</p>
+                                <div class="divider"></div>
+                                <div class="size-guide d-inline-flex border rounded-pill">
+                                    <a class="text-decoration-none link-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"><g><g><path d="M9.151 4.665c0 .933-1.017 1.68-2.31 1.68-1.295 0-2.312-.747-2.312-1.68 0-.933 1.017-1.68 2.311-1.68s2.311.747 2.311 1.68zm-.924 0c0-.327-.601-.746-1.387-.746-.785 0-1.386.373-1.386.746 0 .327.6.746 1.386.746.786 0 1.387-.373 1.387-.746zM22 10.73v9.937C22 21.974 20.983 23 19.689 23H5.499c-.276 0-.461-.187-.461-.467v-3.825C2.08 18.148 0 16.282 0 14.182V4.665C0 2.1 3.05 0 6.84 0s6.84 2.1 6.84 4.665v3.732h6.009c1.294 0 2.31 1.027 2.31 2.333zM.924 4.665c0 2.053 2.635 3.732 5.916 3.732 3.282 0 5.916-1.679 5.916-3.732S10.122.933 6.84.933C3.56.933.924 2.613.924 4.665zm9.984 3.732h1.848v-1.4c-.462.56-1.109 1.027-1.849 1.4zM5.5 12.13h14.189c.786 0 1.387-.607 1.387-1.4 0-.793-.601-1.4-1.387-1.4H6.84c-2.542 0-4.714-.933-5.916-2.332v7.184c0 1.633 1.71 3.033 4.114 3.546v-5.132c0-.28.185-.466.462-.466zm15.668 8.49v-8.024a2.36 2.36 0 0 1-1.387.467H6.055V18.1c.046.094.046.14.046.234 0 0-.046.046-.046.093v3.592h1.617v-2.146c0-.28.185-.466.462-.466.278 0 .463.186.463.466v2.146h1.71v-2.146c0-.28.185-.466.462-.466s.462.186.462.466v2.146h1.71v-2.146c0-.28.185-.466.462-.466.278 0 .462.186.462.466v2.146h1.71v-2.146c0-.28.185-.466.463-.466.277 0 .462.186.462.466v2.146h1.71v-2.146c0-.28.185-.466.462-.466s.462.186.462.466v2.146h.555c.786 0 1.387-.606 1.387-1.4z"/></g></g></svg>
+                                        <span>Size guide</span>
+                                    </a>
                                 </div>
-                                <div class="infor-product border-top border-secondary">
-                                    <p class="small text-secondary pt-4">Donec interdum, metus et hendrerit dolor diam sagittis ligula, eget egestas libero turpis vel mi. Etiam ut purus mattis mauris sodales aliquam. sit amet, consectetuer....</p>
-                                </div>
-                                <div class="d-inline-flex p-3 mb-3 border rounded-pill">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"><g><g><path d="M9.151 4.665c0 .933-1.017 1.68-2.31 1.68-1.295 0-2.312-.747-2.312-1.68 0-.933 1.017-1.68 2.311-1.68s2.311.747 2.311 1.68zm-.924 0c0-.327-.601-.746-1.387-.746-.785 0-1.386.373-1.386.746 0 .327.6.746 1.386.746.786 0 1.387-.373 1.387-.746zM22 10.73v9.937C22 21.974 20.983 23 19.689 23H5.499c-.276 0-.461-.187-.461-.467v-3.825C2.08 18.148 0 16.282 0 14.182V4.665C0 2.1 3.05 0 6.84 0s6.84 2.1 6.84 4.665v3.732h6.009c1.294 0 2.31 1.027 2.31 2.333zM.924 4.665c0 2.053 2.635 3.732 5.916 3.732 3.282 0 5.916-1.679 5.916-3.732S10.122.933 6.84.933C3.56.933.924 2.613.924 4.665zm9.984 3.732h1.848v-1.4c-.462.56-1.109 1.027-1.849 1.4zM5.5 12.13h14.189c.786 0 1.387-.607 1.387-1.4 0-.793-.601-1.4-1.387-1.4H6.84c-2.542 0-4.714-.933-5.916-2.332v7.184c0 1.633 1.71 3.033 4.114 3.546v-5.132c0-.28.185-.466.462-.466zm15.668 8.49v-8.024a2.36 2.36 0 0 1-1.387.467H6.055V18.1c.046.094.046.14.046.234 0 0-.046.046-.046.093v3.592h1.617v-2.146c0-.28.185-.466.462-.466.278 0 .463.186.463.466v2.146h1.71v-2.146c0-.28.185-.466.462-.466s.462.186.462.466v2.146h1.71v-2.146c0-.28.185-.466.462-.466.278 0 .462.186.462.466v2.146h1.71v-2.146c0-.28.185-.466.463-.466.277 0 .462.186.462.466v2.146h1.71v-2.146c0-.28.185-.466.462-.466s.462.186.462.466v2.146h.555c.786 0 1.387-.606 1.387-1.4z"/></g></g></svg>
-                                    <span class="mx-2">Size guide</span>
-                                </div>
-                                <div class="d-flex gap-3 size mb-3">
-                                    <h5 class="border-bottom border-dark border-3 mb-3">SIZE:</h5>
-                                    <form class="d-flex flex-wrap gap-2">
+                                <div class="d-flex size align-items-center">
+                                    <h5 class="border-bottom border-dark border-1">SIZE:</h5>
+                                    <form class="form-check form-check-inline px-0">
                                         <input type="radio" class="btn-check" name="options-outlined" id="size-M" checked>
                                         <label class="btn btn-outline-secondary" for="size-M">M</label>
                                         <input type="radio" class="btn-check" name="options-outlined" id="size-L">
@@ -147,8 +156,8 @@
                                         <label class="btn btn-outline-secondary" for="size-XXL">XXL</label>
                                     </form>
                                 </div>
-                                <div class="d-flex gap-3 color">
-                                    <h5 class="border-bottom border-dark border-3 mb-3">COLOR:</h5>
+                                <div class="d-flex color align-items-center">
+                                    <h5 class="border-bottom border-dark border-1">COLOR:</h5>
                                     <form>
                                         <div class="form-check form-check-inline mx-0">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Copperfield" value="option1" checked>
@@ -164,11 +173,13 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="d-flex gap-3">
+                                <div class="add-cart d-flex">
                                     <button type="button" class="btn btn-dark">ADD TO CART</button>
-                                    <div class="quantity border p-3">1</div>
+                                    <div class="quantity">
+                                        <p class="text-center">1</p>
+                                    </div>
                                 </div>
-                                <div class="d-flex my-3">
+                                <div class="d-flex">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <a class="link-dark" href="#">ADD TO WISHLIST</a>
                                 </div>
@@ -187,85 +198,85 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="d-flex flex-wrap flex-lg-nowrap p-4  mb-3 align-items-center border border-secondary border-2">
-                            <div class="flex-shrink me-4 me-lg-0">
+                    <div class="service col-xxl-3 px-xxl-0">
+                        <div class="service-item d-flex flex-wrap flex-lg-nowrap align-items-center">
+                            <div class="icon-service flex-shrink ">
                                 <img src="img/Shape1.png" alt="">
                             </div>
-                            <div class="flex-grow ms-lg-4">
-                                <h5 class="text-uppercase">free shipping</h5>
-                                <p>only order from $230</p>
+                            <div class="flex-grow">
+                                <h5 class="text-uppercase m-0">free shipping</h5>
+                                <p class="m-0">only order from $230</p>
                             </div>
                         </div>
-                        <div class="d-flex flex-wrap flex-lg-nowrap p-4  mb-3 align-items-center border border-secondary border-2">
-                            <div class="flex-shrink me-4 me-lg-0">
+                        <div class="service-item d-flex flex-wrap flex-lg-nowrap align-items-center">
+                            <div class="icon-service flex-shrink">
                                 <img src="img/Forma1.png" alt="">
                             </div>
-                            <div class="flex-grow ms-lg-4">
-                                <h5 class="text-uppercase">30 day return</h5>
-                                <p>only order from $230</p>
+                            <div class="flex-grow">
+                                <h5 class="text-uppercase m-0">30 day return</h5>
+                                <p class="m-0">only order from $230</p>
                             </div>
                         </div>
-                        <div class="d-flex flex-wrap flex-lg-nowrap p-4 align-items-center border border-secondary border-2">
-                            <div class="flex-shrink me-4 me-lg-0">
+                        <div class="service-item d-flex flex-wrap flex-lg-nowrap align-items-center">
+                            <div class="icon-service flex-shrink">
                                 <img src="img/Forma2.png" alt="">
                             </div>
-                            <div class="flex-grow ms-lg-4">
-                                <h5 class="text-uppercase">safeted payment</h5>
-                                <p>only order from $230</p>
+                            <div class="flex-grow">
+                                <h5 class="text-uppercase m-0">safeted payment</h5>
+                                <p class="m-0">only order from $230</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="mt-5 p-lg-5 border-top">
+        <section class="description-product">
             <div class="container">
-                <ul class="nav nav-pills my-3 flex-sm-nowrap justify-content-center" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills flex-sm-nowrap justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="rounded-pill nav-link link-secondary active" id="description-tab" data-bs-toggle="pill" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                      <button class="btn-description link-secondary active" id="description-tab" data-bs-toggle="pill" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="rounded-pill nav-link link-secondary" id="additional-information-tab" data-bs-toggle="pill" data-bs-target="#additional-information" type="button" role="tab" aria-controls="additional-information" aria-selected="false">Additional information</button>
+                      <button class="btn-additional-information link-secondary" id="additional-information-tab" data-bs-toggle="pill" data-bs-target="#additional-information" type="button" role="tab" aria-controls="additional-information" aria-selected="false">Additional information</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="rounded-pill nav-link link-secondary" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                      <button class="btn-reviews link-secondary" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
                     </li>
                 </ul>
-                <div class="tab-content p-lg-3" id="pills-tabContent-2">
+                <div class="tab-content" id="pills-tabContent-2">
                     <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                        <div class="row">
-                            <div class="col-lg-6">
+                        <div class="row m-0">
+                            <div class="col-xxl p-xxl-0">
                                 <img src="img/model1.jpg" alt="">
                             </div>
-                            <div class="col-lg-6 p-lg-5 my-4">
-                                <h3>Adjustable Hook & Loop fastener</h3>
-                                <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
-                                <a class="link-dark mb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                            <div class="more-about col-xxl p-xxl-0 my-auto">
+                                <p class="title">Adjustable Hook & Loop fastener</p>
+                                <p class="excerpts text-secondary">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                                <a class="link-dark" href="#">Buy now</a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="additional-information" role="tabpanel" aria-labelledby="additional-information-tab">
-                        <div class="row">
-                            <div class="col-lg-6">
+                        <div class="row m-0">
+                            <div class="col-xxl p-xxl-0">
                                 <img src="img/model1.jpg" alt="">
                             </div>
-                            <div class="col-lg-6 p-lg-5 my-4">
-                                <h3>Adjustable Hook & Loop fastener</h3>
-                                <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
-                                <a class="link-dark mb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                            <div class="more-about col-xxl p-xxl-0 my-auto">
+                                <p class="title">Adjustable Hook & Loop fastener</p>
+                                <p class="excerpts text-secondary">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                                <a class="link-dark" href="#">Buy now</a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                        <div class="row">
-                            <div class="col-lg-6">
+                        <div class="row m-0">
+                            <div class="col-xxl p-xxl-0">
                                 <img src="img/model1.jpg" alt="">
                             </div>
-                            <div class="col-lg-6 p-lg-5 my-4">
-                                <h3>Adjustable Hook & Loop fastener</h3>
-                                <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
-                                <a class="link-dark mb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                            <div class="more-about col-xxl p-xxl-0 my-auto">
+                                <p class="title">Adjustable Hook & Loop fastener</p>
+                                <p class="excerpts text-secondary">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                                <a class="link-dark" href="#">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -275,23 +286,24 @@
         <section class="banner">
             <img src="img/banner.jpg" alt="">
         </section>
-        <section class="about-product mt-lg-4">
+        <section class="product-quality">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 my-4 p-lg-5 ">
-                        <h3>100% Polyester</h3>
-                        <p class="small text-secondary text-justify">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
-                        <a class="link-dark mb-2 border-bottom border-3 border-dark" href="#">Buy now</a>
+                    <div class="more-about col-xxl my-auto">
+                        <p class="title">100% Polyester</p>
+                        <p class="excerpts text-secondary">Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                        <a class="link-dark" href="#">Buy now</a>
                     </div>
-                    <div class="col-lg-6 p-lg-5">
+                    <div class="col-xxl p-xxl-0">
                         <img src="img/model2.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="border-top p-5 mt-5">
+        <section class="related-product">
             <div class="container">
-                <div class="related-product">
+                <h6 class="text-center">Related Products</h6>
+                <div class="product">
                     <div class="product-item">
                         <img src="img/shoe1.jpg" alt="">
                     </div>
@@ -323,33 +335,31 @@
         <footer>
             <div class="footer-top">
                 <div class="container">
-                    <div class="row py-5">
-                        <div class="col-lg-3 mb-4">
+                    <div class="row">
+                        <div class="col p-xxl-0">
                             <h5 class="title-list text-light">help & information</h5>
-                            <div class="divider my-3"></div>
-                            <div class="nav flex-column gap-2">
+                            <div class="divider"></div>
+                            <div class="nav flex-column">
                                 <a class="link-secondary text-capitalize" href="#">help</a>
                                 <a class="link-secondary text-capitalize" href="#">track order</a>
                                 <a class="link-secondary text-capitalize" href="#">delivery & returns</a>
                                 <a class="link-secondary text-capitalize" href="#">10% student discount</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-4">
+                        <div class="col p-xxl-0">
                             <h5 class="title-list text-light">about us</h5>
-                            <div class="divider my-3"></div>
-                            <div class="nav flex-column gap-2">
+                            <div class="divider"></div>
+                            <div class="nav flex-column">
                                 <a class="link-secondary text-capitalize" href="#">careers at eveland</a>
                                 <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
-                                <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
                                 <a class="link-secondary text-capitalize" href="#">investors site</a>
-                                <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
                                 <a class="link-secondary text-capitalize" href="#">contact us</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-4">
+                        <div class="col p-xxl-0">
                             <h5 class="title-list text-light">categories</h5>
-                            <div class="divider my-3"></div>
-                            <div class="nav flex-column gap-2">
+                            <div class="divider"></div>
+                            <div class="nav flex-column">
                                 <a class="link-secondary text-capitalize" href="#">all clothing</a>
                                 <a class="link-secondary text-capitalize" href="#">jackets</a>
                                 <a class="link-secondary text-capitalize" href="#">jumpsuits</a>
@@ -357,29 +367,29 @@
                                 <a class="link-secondary text-capitalize" href="#">party dresses</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-4">
+                        <div class="col p-xxl-0">
                             <h5 class="title-list text-light">the good stuff in your inbox</h5>
-                            <div class="divider opacity-0 my-3"></div>
+                            <div class="divider opacity-0"></div>
                             <div class="">
                                 <p class="text-muted">New & update from EvelandStore.</p>
                                 <p class="text-muted">No spam, we promise.</p>
                             </div>
-                            <div class="Registion text-end">
+                            <div class="registion text-end">
                                 <a class="text-light text-decoration-none" href="#">Sign up<i class="fa fa-angle-right mx-2" aria-hidden="true"></i></a>
                             </div>
                             <div class="border-top border-2 border-primary"></div>
-                            <div class="social py-4">
-                                <div class="d-flex gap-2 list-unstyled">
-                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                            <div class="social">
+                                <div class="d-flex list-unstyled">
+                                    <a class="text-light" href="#">
                                         <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
                                     </a>
-                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                    <a class="text-light" href="#">
                                         <i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
                                     </a>
-                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                    <a class="text-light " href="#">
                                         <i class="fa fa-behance fa-lg" aria-hidden="true"></i>
                                     </a>
-                                    <a class="text-light bg-secondary p-3 rounded-circle" href="#">
+                                    <a class="text-light" href="#">
                                         <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -388,11 +398,11 @@
                     </div>
                 </div>
             </div>
-            <div class="border-top p-3">
+            <div class="footer-bottom border-top">
                 <div class="container">
-                    <div class="d-flex flex-wrap gap-2  justify-content-between">
+                    <div class="d-flex flex-wrap justify-content-between">
                         <div class="author">
-                            <p class="text-muted mb-0">Website by <span class="text-light">Famithemes.</span> Copyright Evelandshop</p>
+                            <p class="text-muted m-0">Website by <span class="text-light">Famithemes.</span> Copyright Evelandshop</p>
                         </div>
                         <div class="payment">
                             <img src="img/paypal-curved-128px.png" alt="">

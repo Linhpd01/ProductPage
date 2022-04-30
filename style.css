@@ -1,33 +1,162 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.container{
+    padding: 0;
+}
 a{
     text-decoration: none;
 }
-.text-justify {
-    text-align: justify;
-  }
+/*Notification*/
 .notify{
     background-color: #1e1e1e;
+    height: 59px;
 }
 .notify .title-notify{
-    margin-bottom:0;
+    padding: 23px 0 28px;
     font-size: 10px;
     letter-spacing: 2px;
     word-spacing: 5px;
+    line-height: 18px;
+}
+.close{
+    top: 21px;
+    right: 0;
+    bottom: 26px
+}
+/*header*/
+header{
+    min-height: 96px;
+    border-bottom: 1px solid #888;
+}
+header .navbar{
+    padding-top: 13px !important;
+}
+.menu-search {
+    float: left;
+    margin: 0 44px 0 36px;
+}
+.menu-user{
+    float: left;
+    margin-right: 17px;
+}
+.menu-shopping-cart{
+    float: left;
 }
 header .name-brand{
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: bold;
     letter-spacing: 6px;
 }
-/*section2*/
+header .navbar-nav .nav-link{
+    font-size: 16px;
+    margin-right: 35px;
+}
+/*order-product*/
+.page-product{
+    margin: 38px 0 27px;
+}
+.infor-order { 
+    padding: 0 45px;
+}
+.infor-order .rating{
+    margin-bottom: 21px;
+}
+.infor-order .rating > img {
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+}
+.infor-order .rating span{
+    font-size: 14px;
+    color: #999999;
+}
+.infor-order .name-product{
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.infor-order .price{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.infor-order .about-product{
+    font-size: 14px;
+    color:#a8a8a8;
+    margin-bottom: 30px;
+}
+.infor-order .divider{
+    margin-bottom: 35px;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+}
+.infor-order .size-guide{
+    padding: 7px 28px 16px 17px;
+    background-color: #f3f3f3;
+    margin-bottom: 23px;
+}
+.infor-order .size-guide span{
+    font-size: 14px;
+}
+.infor-order .size h5{
+    margin-right: 26px;
+    padding-right: 27px;
+    font-size: 12px;
+}
+.infor-order .color{
+    margin: 40px 0 30px 0;
+}
+.infor-order .color h5{
+    margin-right: 27px;
+    padding-right: 9px;
+    font-size: 12px;
+}
+.infor-order .add-cart .btn{
+    width: 190px;
+    height: 55px;
+    margin-right: 7px;
+    font-size: 12px;
+}
+.infor-order .add-cart{
+    margin-bottom: 30px;
+}
+.infor-order .add-cart .quantity{
+    width: 67px;
+    height: 55px;
+    border: 2px solid #000;
+}
+.infor-order .add-cart .quantity p{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+.order-product .tab-pane{
+    width: 561px;
+    height: 678px;
+}
+.service .service-item{
+    border: 1px solid #888;
+    padding: 30px 0 35px 45px
+}
+.service .icon-service{ 
+    margin-right: 25px;
+}
+/*description-product*/
 #image1-tab{
-    width: 100px;
+    width: 105px;
+    height: 128px;
+    margin: 0 15px 15px 0;
 }
 #image2-tab{
-    width: 100px;
+    width: 105px;
+    height: 128px;
+    margin: 0 15px 15px 0 ;
 }
 #image3-tab{
-    width: 100px;
+    width: 105px;
+    height: 128px;
+    margin: 0 15px 15px 0;
 }
 #image1-tab img{
     width: 100%;
@@ -47,6 +176,60 @@ header .name-brand{
 #image3 img{
     width: 100%;
 }
+.description-product .tab-pane img{
+    width: 100%;
+}
+.description-product{
+    margin: 55px 0 65px 0;
+    border-top: 1px solid #999999;
+}
+.description-product ul{
+    margin: 50px 0 52px 0;
+}
+.description-product li{
+    margin-right: 20px;
+}
+.description-product .btn-description{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+}
+.description-product .btn-additional-information{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+}
+.description-product .btn-reviews{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+}
+.description-product .btn-description:hover{
+    background-color: #48c8fd;
+    border-radius: 30px;
+    border: none;
+}
+.description-product .btn-additional-information:hover{
+    background-color: #48c8fd;
+    border-radius: 30px;
+    border: none;
+}
+.description-product .btn-reviews:hover{
+    background-color: #48c8fd;
+    border-radius: 30px;
+    border: none;
+}
+.description-product .more-about{
+    margin-left: 120px;
+}
+.description-product .more-about .title{
+    font-size: 40px;
+    line-height: 60px;
+}
+.description-product .more-about a{
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
 /*color*/
 #Copperfield{
     background-image: url('img/Copperfield.png');
@@ -57,23 +240,49 @@ header .name-brand{
 #Viking{
     background-image: url('img/Viking.png');
 }
-/*tab-pane*/
-.tab-pane img{
+/*about-product*/
+.product-quality img{
     width: 100%;
 }
-/*about-product*/
-.about-product img{
-    width: 100%;
+.product-quality .more-about{
+    margin-right:120px ;
 }
 /*banner*/
 .banner img{
+    margin-bottom: 88px;
     width: 100%;
     height: auto;
+}
+/*product-quality*/
+.product-quality {
+    margin-bottom: 85px;
+}
+.product-quality .title{
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.product-quality a{
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.product-quality .excerpts{
+    font-size: 14px;
+    margin-bottom: 35px ;
+}
+/*related-product*/
+.related-product{
+    margin-bottom: 60px;
+}
+.related-product h6{
+    font-size: 22px;
+    border-top: 1px solid #000;
+    padding: 85px 0 55px 0;
 }
 /*slick*/ 
 .slick-slide img{
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 40px 0 0;
 }
 .slick-dots button{
     font-size: 0;
@@ -96,17 +305,45 @@ header .name-brand{
     position: absolute;
     left: 50%;
 }
+.product .slick-list{
+    padding-bottom: 60px;
+}
 /*footer*/
 footer{
+    padding-top: 70px;
     background-color: #161616;
 }
-.divider{
-    margin: 20px 0;
-    height: 3px;
-    width: 15%;
+footer .col{
+    padding-right: 160px;
+}
+footer .divider{
+    margin: 20px 0 30px 0;
+    height: 1px;
+    width: 55px;
     background-color: #fff;
 }
 footer .title-list{
     font-size: 14px;
     text-transform: uppercase;
+}
+footer .nav a{
+    margin-bottom: 20px;
+}
+footer .registion{
+    margin-bottom: 15px;
+}
+footer .social{
+    margin-top: 30px;
+}
+footer .social a{
+    margin-right: 15px;
+    padding: 15px;
+    background-color: #222222;
+    border-radius: 50%;
+}
+footer .footer-bottom{
+    padding: 27px 0;
+}
+footer .author{
+    font-size: 12px;
 }
