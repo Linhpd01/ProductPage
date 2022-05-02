@@ -30,7 +30,7 @@
     }
     .product-quality .more-about{
         margin-left: 0;
-        padding: 50px;
+        padding-bottom: 20px;
     }
 }
 @media(min-width:1450px){

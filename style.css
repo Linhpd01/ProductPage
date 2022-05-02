@@ -192,16 +192,19 @@ header .navbar-nav .nav-link{
 .description-product .btn-description{
     border: none;
     background-color: transparent;
+    padding: 10px;
     font-size: 12px;
 }
 .description-product .btn-additional-information{
     border: none;
     background-color: transparent;
+    padding: 10px;
     font-size: 12px;
 }
 .description-product .btn-reviews{
     border: none;
     background-color: transparent;
+    padding: 10px;
     font-size: 12px;
 }
 .description-product .btn-description:hover{
