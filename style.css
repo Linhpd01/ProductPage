@@ -192,19 +192,19 @@ header .navbar-nav .nav-link{
 .description-product .btn-description{
     border: none;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px 30px;
     font-size: 12px;
 }
 .description-product .btn-additional-information{
     border: none;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px 30px;
     font-size: 12px;
 }
 .description-product .btn-reviews{
     border: none;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px 30px;
     font-size: 12px;
 }
 .description-product .btn-description:hover{
@@ -283,10 +283,6 @@ header .navbar-nav .nav-link{
     padding: 85px 0 55px 0;
 }
 /*slick*/ 
-.slick-slide img{
-    max-width: 100%;
-    padding: 0 40px 0 0;
-}
 .slick-dots button{
     font-size: 0;
     height: 15px;
