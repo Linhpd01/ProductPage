@@ -16,15 +16,6 @@
     .notify .container{
         max-width: 1320px;
     }
-    header .container{
-        max-width: 1320px;
-    }
-    .page-product .container{
-        max-width: 1320px;
-    }
-    .container{ 
-        max-width: 1320px;
-    }
     .description-product .more-about{
         margin-left: 0;
     }
@@ -46,6 +37,11 @@
     .navbar-expand-lg .navbar-nav .nav-link{
         padding: 0;
 }
+}
+@media (max-width: 992px){
+    .infor-order {
+        padding: 0;
+    }
 }
 @media(max-width: 576px){
     #image1-tab{
